@@ -4,34 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Snackbar is done</title>
+    <link rel="stylesheet" href="./css/snackbar.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Smackbar</h1>
+      <h1>Snackbar</h1>
     </section>
 
     <form class="form">
-      <label>
+      <label class="delay-form">
         Delay (ms)
-        <input type="number" name="delay" required />
+        <input type="number" name="delay" required class="delay-input" />
       </label>
 
-      <fieldset>
+      <fieldset class="state-inp">
         <legend>State</legend>
         <label>
-          <input type="radio" name="state" value="fulfilled" required />
+          <input
+            type="radio"
+            name="state"
+            value="fulfilled"
+            class="fulfilled"
+            required
+          />
           Fulfilled
         </label>
         <label>
-          <input type="radio" name="state" value="rejected" required />
+          <input type="radio" name="state" value="rejected" class="rejected" />
           Rejected
         </label>
       </fieldset>
 
-      <button type="submit">Create notification</button>
+      <button type="submit" class="smack-button">Create notification</button>
     </form>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
